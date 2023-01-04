@@ -2,7 +2,7 @@
 a bunch of git commands from basics to advanced ones.
 
 
-### Setup
+## Setup
 <details open><summary><b> Init git repository </b></summary>
   
 > Inside the desired folder
@@ -20,7 +20,7 @@ rm -fr .git/
 </details>
 
 
-### Configs
+## Configs
 <details open><summary><b> Setting user name and email </b></summary>
 
 > Can be user with user.name or user.email
@@ -67,7 +67,7 @@ git rm --cached -r hello.txt
 </details>
 
 
-### Commiting
+## Commiting
 
 <details open><summary><b> Commit </b></summary>
   
