@@ -86,5 +86,20 @@ git diff --cached
 ```    
 </details>
 
+## Logging
+
+<details open><summary><b> Log </b></summary>
+  
+> Some usefull log commands. The list is starting from most recent commit to the oldest. HEAD means most recent one.
+  
+```
+git log
+git log --oneline
+git log -3 
+git log -patch
+git log -stat
+
+```    
+</details>
 
 
