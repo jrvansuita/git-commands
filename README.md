@@ -128,7 +128,7 @@ git checkout main
 > Remove all untracked files
   
 ```
-git clean
+git clean -f
 ```    
 </details>
 
