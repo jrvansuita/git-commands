@@ -116,8 +116,8 @@ git commit --amend -m "updated commit message"
 git log
 git log --oneline
 git log -3 
-git log -patch
-git log -stat
+git log --patch
+git log --stat
 
 ```    
 </details>
@@ -143,5 +143,14 @@ git clean -f
 ```    
 </details>
 
+
+## Checkout
+
+<details open><summary><b> Check Remote </b></summary>
+  
+```
+git remote -v
+```    
+</details>
 
 
