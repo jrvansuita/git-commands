@@ -2,6 +2,24 @@
 a bunch of git commands from basics to advanced ones.
 
 
+### Setup
+<details open><summary><b> Init git repository </b></summary>
+  
+> Inside the desired folder
+  
+```
+git init
+```    
+</details>
+
+<details open><summary><b> Delete .git/ folder </b></summary>
+  
+```
+rm -fr .git/
+```    
+</details>
+
+
 ### Configs
 <details open><summary><b> Setting user name and email </b></summary>
 
