@@ -86,6 +86,15 @@ git diff --cached
 ```    
 </details>
 
+<details open><summary><b> Amend </b></summary>
+  
+> Change commit message
+  
+```
+git commit --amend -m "updated commit message"
+```    
+</details>
+
 ## Logging
 
 <details open><summary><b> Log </b></summary>
@@ -99,6 +108,27 @@ git log -3
 git log -patch
 git log -stat
 
+```    
+</details>
+
+## Checkout
+
+<details open><summary><b> Checkout </b></summary>
+  
+> Checking out to a specific commit and returning to the head
+  
+```
+git checkout 3197c04
+git checkout main
+```    
+</details>
+
+<details open><summary><b> Clean Untracked </b></summary>
+  
+> Remove all untracked files
+  
+```
+git clean
 ```    
 </details>
 
