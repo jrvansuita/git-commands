@@ -76,5 +76,15 @@ git commit -m "few changes"
 ```    
 </details>
 
+<details open><summary><b> Check diffs </b></summary>
+  
+> See files diffs when not staged or after staging the files
+  
+```
+git diff 
+git diff --cached
+```    
+</details>
+
 
 
