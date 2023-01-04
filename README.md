@@ -144,7 +144,14 @@ git clean -f
 </details>
 
 
-## Checkout
+## Remote
+
+<details open><summary><b> Adding Remote </b></summary>
+  
+```
+git remote add origin <url>
+```    
+</details>
 
 <details open><summary><b> Check Remote </b></summary>
   
