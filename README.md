@@ -57,6 +57,17 @@ git add hello.txt
 </details>
 
 <details open><summary><b> Unstage files </b></summary>
+  
+> Unstage all files or reset all
+  
+```
+git restore --staged .
+git reset --hard
+```    
+</details>
+
+
+<details open><summary><b> Unstage files without Head </b></summary>
 
 > Unstage all files or one by one
   
@@ -131,5 +142,6 @@ git checkout main
 git clean -f
 ```    
 </details>
+
 
 
