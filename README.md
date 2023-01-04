@@ -36,3 +36,45 @@ git config --global user.email "me@email.com"
 git config --global init.defaultBranch main
 ```    
 </details>
+
+
+### File Staging
+<details open><summary><b> Get git status </b></summary>
+
+```
+git status
+```    
+</details>
+
+<details open><summary><b> Stage files </b></summary>
+
+> Add all files or one by one
+  
+```
+git add .
+git add hello.txt
+```    
+</details>
+
+<details open><summary><b> Unstage files </b></summary>
+
+> Unstage all files or one by one
+  
+```
+git rm --cached -r .
+git rm --cached -r hello.txt
+```    
+</details>
+
+
+### Commiting
+
+<details open><summary><b> Commit </b></summary>
+  
+```
+git commit -m "few changes"
+```    
+</details>
+
+
+
