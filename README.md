@@ -169,7 +169,7 @@ git branch
 ```    
 </details>
 
-<details open><summary><b> Create and Checkouting a branch </b></summary>
+<details open><summary><b> Create and Checking out a branch </b></summary>
   
 ```
 git branch <new-branch-name>
@@ -185,5 +185,14 @@ git switch -c <new-branch-name>
 git checkout -f -b <new-branch-name>
 ```    
 </details>
+  
+  
+<details open><summary><b> Delete </b></summary>
+  
+```
+git branch -D <new-branch-name>
+```    
+</details>  
+  
 
 
