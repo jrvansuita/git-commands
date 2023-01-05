@@ -199,6 +199,8 @@ git push --delete origin <new-branch-name>
   
   
 <details open><summary><b> Rename </b></summary>
+ 
+> For renaming on remote, you need first delete the branch from remote, rename local with the above command and push again to the remote.
   
 ```
 git branch -m <new-branch-name2>
