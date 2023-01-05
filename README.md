@@ -287,6 +287,30 @@ push --delete origin v2
 </details> 
   
   
+  
+## Stash
+
+> If you have an unready work and need to start working on another feature, you can stash changed from a specific branch and work on another branch without messing up with the current work.
+  
+```js
+//Stashing
+git stash
+  
+//Listing
+git stash list
+  
+//Applying  
+git stash apply
+  
+//Applying a specific one 
+git stash apply stash@{2}
+  
+//Applying and Deleting
+git stash apply pop
+  
+//Deleting
+git stash drop stash@{2}
+```    
 
 
   
