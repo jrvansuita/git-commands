@@ -191,9 +191,9 @@ git checkout -f -b <new-branch-name>
   
 ```
 //From Local
-git branch -D <new-branch-name>
+git branch -D <branch-name>
 //From Remote
-git push --delete origin <new-branch-name>
+git push --delete origin <branch-name>
 ```    
 </details>  
   
@@ -204,7 +204,7 @@ git push --delete origin <new-branch-name>
   
 ```
 //Current branch
-git branch -m <new-branch-name2>
+git branch -m <branch-name2>
   
 //Specific branch  
 git branch -m dev <any-branch-name>
@@ -218,5 +218,23 @@ git branch -m dev <any-branch-name>
 git push --set-upstream origin <new-branch-name>
 ```    
 </details>  
+  
 
+## Merge
+  
+<details open><summary><b> Merge </b></summary>
+  
+```
+// Merge to  current branch
+git merge <branch-name>
+```    
+</details>  
+  
+<details open><summary><b> Abort </b></summary>
+  
+```
+// Merge to  current branch
+git merge --abort
+```    
+</details>  
 
