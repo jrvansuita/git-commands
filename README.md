@@ -180,6 +180,9 @@ git checkout -b <new-branch-name>
   
 //Both commands in one line using switch command
 git switch -c <new-branch-name>
+  
+//And undo all before chekcing out to a new branch
+git checkout -f -b <new-branch-name>
 ```    
 </details>
 
