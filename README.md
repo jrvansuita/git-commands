@@ -118,7 +118,6 @@ git log --oneline
 git log -3 
 git log --patch
 git log --stat
-
 ```    
 </details>
 
@@ -275,6 +274,18 @@ git push origin v1
 git push origin --tags
 ```    
 </details> 
+  
+    
+<details open><summary><b> Deleting </b></summary>
+  
+```
+//Local
+git tag -D v2
+//Remote
+push --delete origin v2
+```    
+</details> 
+  
   
 
 
