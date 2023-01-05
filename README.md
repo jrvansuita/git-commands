@@ -266,6 +266,16 @@ git tag -a -m "tag for v1 version" v1
 ```    
 </details>  
   
+<details open><summary><b> Pushing </b></summary>
+  
+```
+//Pushing v1 tag
+git push origin v1
+//Pushing all tags
+git push origin --tags
+```    
+</details> 
+  
 
 
   
