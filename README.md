@@ -190,9 +190,27 @@ git checkout -f -b <new-branch-name>
 <details open><summary><b> Delete </b></summary>
   
 ```
+//From Local
 git branch -D <new-branch-name>
+//From Remote
+git push --delete origin <new-branch-name>
 ```    
 </details>  
   
+  
+<details open><summary><b> Rename </b></summary>
+  
+```
+git branch -m <new-branch-name2>
+```    
+</details>  
+
+  
+<details open><summary><b> Push </b></summary>
+  
+```
+git push --set-upstream origin <new-branch-name>
+```    
+</details>  
 
 
