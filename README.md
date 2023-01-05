@@ -242,7 +242,7 @@ git merge --abort
 
 > It make a mark point on any commit. You can easily checkout a tag (commit) and compare tags with the diff command. It generally stands for marking release versions.
   
-```js
+```properties
 # Listing  
 git tag -n
   
