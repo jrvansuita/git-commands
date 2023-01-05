@@ -160,83 +160,52 @@ git remote -v
 </details>
   
 ## Branch
-
-<details open><summary><b> Listing </b></summary>
   
-```
+> Branch is used to make a copy from the current main branch to start implementing features without messing up with the stable main branch. 
+  
+```properties
+# Listing  
 git branch
-```    
-</details>
 
-<details open><summary><b> Create and Checking out a branch </b></summary>
-  
-```
-git branch <new-branch-name>
-git checkout <new-branch-name>
-  
-//Both commands in one line
+# Creating and checking out a new branch
 git checkout -b <new-branch-name>
   
-//Both commands in one line using switch command
+# Now using switch command
 git switch -c <new-branch-name>
   
-//And undo all before chekcing out to a new branch
+# Discart all changes before creating and checking out to a new branch
 git checkout -f -b <new-branch-name>
-```    
-</details>
-  
-  
-<details open><summary><b> Delete </b></summary>
-  
-```
-//From Local
+
+# Delete a branch on local
 git branch -D <branch-name>
-//From Remote
+
+# Delete a branch on remote
 git push --delete origin <branch-name>
-```    
-</details>  
-  
-  
-<details open><summary><b> Rename </b></summary>
  
-> For renaming on remote, you need first delete the branch from remote, rename local with the above command and push again to the remote.
-  
-```
-//Current branch
+# Renaming the current branch on local
 git branch -m <branch-name2>
   
-//Specific branch  
+# Renaming a specific branch  on local
 git branch -m dev <any-branch-name>
-```    
-</details>  
-
   
-<details open><summary><b> Push </b></summary>
+# For renaming on remote, you need first delete the branch from remote, 
+# rename local with the above command and push again to the remote.  
   
-```
+# Push new branch to remote  
 git push --set-upstream origin <new-branch-name>
 ```    
-</details>  
-  
 
 ## Merge
+   
+> When the work is done on a feature branch, you shall merge the work to the develop branch, right? 
   
-<details open><summary><b> Merge </b></summary>
-  
-```
-// Merge to  current branch
-git merge <branch-name>
-```    
-</details>  
-  
-<details open><summary><b> Abort </b></summary>
-  
-```
-// Merge to  current branch
+```properties
+# Merge on current branch the work from ...
+git merge <feature-branch>
+
+# Aborting when conflicts
 git merge --abort
-```    
-</details>  
-  
+```      
   
 ## Tags
 
