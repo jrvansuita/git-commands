@@ -239,76 +239,56 @@ git merge --abort
   
   
 ## Tags
-  
 
-<details open><summary><b> Listing </b></summary>
+> It make a mark point on any commit. You can easily checkout a tag (commit) and compare tags with the diff command. It generally stands for marking release versions.
   
-```
+```js
+# Listing  
 git tag -n
-```    
-</details>  
   
-<details open><summary><b> Simple Tag </b></summary>
-  
-```
-//Tagging Head
+# Tagging current commit (HEAD)
 git tag v1
-//Tagging specific commit
+  
+# Tagging a specific commit
 git tag v1 922b10b
-```    
-</details>  
-
-<details open><summary><b> Annotated Tag </b></summary>
   
-```
+# Tagging with an annotated tag
 git tag -a -m "tag for v1 version" v1  
-```    
-</details>  
   
-<details open><summary><b> Pushing </b></summary>
-  
-```
-//Pushing v1 tag
+# Pushing v1 to remote
 git push origin v1
-//Pushing all tags
+  
+# Pushing all tags to remote
 git push origin --tags
-```    
-</details> 
   
-    
-<details open><summary><b> Deleting </b></summary>
-  
-```
-//Local
+# Deleting a local tag
 git tag -D v2
-//Remote
+  
+# Deleting a remote tag
 push --delete origin v2
 ```    
-</details> 
-  
-  
   
 ## Stash
 
 > If you have an unready work and need to start working on another feature, you can stash changed from a specific branch and work on another branch without messing up with the current work.
   
-```js
-//Stashing
+```properties
+# Stashing
 git stash
   
-//Listing
+# Listing
 git stash list
   
-//Applying  
+# Applying  
 git stash apply
   
-//Applying a specific one 
+# Applying a specific one 
 git stash apply stash@{2}
   
-//Applying and Deleting
+# Applying and Deleting
 git stash apply pop
   
-//Deleting
+# Deleting
 git stash drop stash@{2}
 ```    
 
