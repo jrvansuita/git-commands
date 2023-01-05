@@ -159,5 +159,28 @@ git remote add origin <url>
 git remote -v
 ```    
 </details>
+  
+## Branch
+
+<details open><summary><b> Listing </b></summary>
+  
+```
+git branch
+```    
+</details>
+
+<details open><summary><b> Create and Checkouting a branch </b></summary>
+  
+```
+git branch <new-branch-name>
+git checkout <new-branch-name>
+  
+//Both commands in one line
+git checkout -b <new-branch-name>
+  
+//Both commands in one line using switch command
+git switch -c <new-branch-name>
+```    
+</details>
 
 
