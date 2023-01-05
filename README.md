@@ -237,4 +237,37 @@ git merge <branch-name>
 git merge --abort
 ```    
 </details>  
+  
+  
+## Tags
+  
+
+<details open><summary><b> Listing </b></summary>
+  
+```
+git tag -n
+```    
+</details>  
+  
+<details open><summary><b> Simple Tag </b></summary>
+  
+```
+//Tagging Head
+git tag v1
+//Tagging specific commit
+git tag v1 922b10b
+```    
+</details>  
+
+<details open><summary><b> Annotated Tag </b></summary>
+  
+```
+git tag -a -m "tag for v1 version" v1  
+```    
+</details>  
+  
+
+
+  
+
 
