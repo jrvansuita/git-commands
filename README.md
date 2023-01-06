@@ -25,6 +25,16 @@ git config --global user.name "me"
 git config --global init.defaultBranch main
 ```    
 
+## SSH
+```properties
+# Generate key
+ssh-keygen
+
+# Adding the generated key
+ ssh-add ~/.ssh/id_rsa
+```
+
+
 ## Status
 
 > Check the current git status 
