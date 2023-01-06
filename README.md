@@ -234,6 +234,16 @@ git stash apply pop
 git stash drop stash@{2}
 ```    
 
+## Revert
+
+```properties
+## Revert last commit and keep history
+git revert HEAD --no-edit
+
+# Delete 1 commit from head, destroy history.
+git reset --hard HEAD~1
+```
+
 
   
 
