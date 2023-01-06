@@ -236,6 +236,8 @@ git stash drop stash@{2}
 
 ## Revert
 
+> Use revert command to revert a commit or reset command to delete and not keep track of commits history.
+
 ```properties
 ## Revert last commit and keep history
 git revert HEAD --no-edit
@@ -251,7 +253,14 @@ git push --force
 git push --force-with-lease
 ```
 
+## Rebase
 
+> Rebase is used to change the initial content after you have commits on your branch. Mostly used to merge main commits on you feature branch before merging your own commits on main branch. So that, git will not create the merge commit.
+
+```properties
+# On your current feature branch
+git rebase main
+```
   
 
 
