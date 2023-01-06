@@ -3,161 +3,124 @@ a bunch of git commands from basics to advanced ones.
 
 
 ## Setup
-<details open><summary><b> Init git repository </b></summary>
-  
-> Inside the desired folder
-  
-```
-git init
-```    
-</details>
 
-<details open><summary><b> Delete .git/ folder </b></summary>
-  
-```
+```properties
+# Init git repository  
+git init
+
+# Delete .git/ folder 
 rm -fr .git/
 ```    
-</details>
 
+## Config
 
-## Configs
-<details open><summary><b> Setting user name and email </b></summary>
-
-> Can be user with user.name or user.email
-
-```
+```properties
+# Setting user email
 git config --global user.email "me@email.com"
-```    
-</details>
+  
+# Setting user name
+git config --global user.name "me"  
 
-<details open><summary><b> Change default branch name to "main" </b></summary>
-
-```
+# Change default branch name to "main"
 git config --global init.defaultBranch main
 ```    
-</details>
 
+## Status
 
-### File Staging
-<details open><summary><b> Get git status </b></summary>
+> Check the current git status 
 
-```
+```properties
+# Gives a detail status from the current work
 git status
 ```    
-</details>
 
-<details open><summary><b> Stage files </b></summary>
+## Stage
 
-> Add all files or one by one
-  
-```
+> When the files are staged means they begin been tracked by git and they are ready to be commited.
+
+```properties
+# Stage all files 
 git add .
+
+# Stage one by one
 git add hello.txt
-```    
-</details>
-
-<details open><summary><b> Unstage files </b></summary>
   
-> Unstage all files or reset all
-  
-```
+# Unstage all files
 git restore --staged .
+
+# Unstage and clean
 git reset --hard
-```    
-</details>
 
-
-<details open><summary><b> Unstage files without Head </b></summary>
-
-> Unstage all files or one by one
-  
-```
+# Unstage files without a Head commit (When creating the repository)
 git rm --cached -r .
 git rm --cached -r hello.txt
 ```    
-</details>
-
 
 ## Commiting
 
-<details open><summary><b> Commit </b></summary>
-  
-```
+> Commiting means save your work.
+
+```properties
+# Commit with a message
 git commit -m "few changes"
-```    
-</details>
 
-<details open><summary><b> Check diffs </b></summary>
-  
-> See files diffs when not staged or after staging the files
-  
-```
+# See files diffs when not staged
 git diff 
-git diff --cached
-```    
-</details>
 
-<details open><summary><b> Amend </b></summary>
+# See files diffs when staged
+git diff --cached
   
-> Change commit message
-  
-```
+# Change the last commit message (Not possible to change previous commits)
 git commit --amend -m "updated commit message"
 ```    
-</details>
 
 ## Logging
 
-<details open><summary><b> Log </b></summary>
-  
 > Some usefull log commands. The list is starting from most recent commit to the oldest. HEAD means most recent one.
   
-```
+```properties
+# Shows all the list
 git log
+
+# Show only one line
 git log --oneline
+
+# Shows the last 3
 git log -3 
+
+# Different view
 git log --patch
+
+# Simple resume from each
 git log --stat
-```    
-</details>
+```  
 
 ## Checkout
 
-<details open><summary><b> Checkout </b></summary>
-  
-> Checking out to a specific commit and returning to the head
-  
-```
-git checkout 3197c04
-git checkout main
-```    
-</details>
+> Checkout command is used to change your current work to a specific commit, tag or even another branch.
 
-<details open><summary><b> Clean Untracked </b></summary>
-  
-> Remove all untracked files
-  
-```
+```properties
+# Checkout to a commit
+git checkout 3197c04
+
+# Checkout to a branch
+git checkout develop
+
+# Clean untracked files before checking out
 git clean -f
 ```    
-</details>
-
-
+ 
 ## Remote
 
-<details open><summary><b> Adding Remote </b></summary>
+> Adding a remote url is need to share your repository with the team.
   
-```
+```properties
+# Adding a remote url to the local repository
 git remote add origin <url>
-```    
-</details>
 
-<details open><summary><b> Check Remote </b></summary>
-  
-```
+# Check remote url attached
 git remote -v
 ```    
-</details>
   
 ## Branch
   
