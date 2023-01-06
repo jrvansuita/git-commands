@@ -242,6 +242,13 @@ git revert HEAD --no-edit
 
 # Delete 1 commit from head, destroy history.
 git reset --hard HEAD~1
+
+# Forcing a push for updating remote with new history
+# Whenever there are history change on commits, it's necessery to use --force
+git push --force
+
+# Check if there are not changes lost on the process 
+git push --force-with-lease
 ```
 
 
