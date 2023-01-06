@@ -260,6 +260,9 @@ git push --force-with-lease
 ```properties
 # On your current feature branch
 git rebase main
+
+# Pull the rebase
+git pull --rebase
 ```
   
 
