@@ -82,6 +82,9 @@ git diff --cached
   
 # Change the last commit message (Not possible to change previous commits)
 git commit --amend -m "updated commit message"
+
+# Staging and commiting all changes on the same command
+git commit -a -m "works fine"
 ```    
 
 ## Logging
@@ -137,8 +140,11 @@ git remote -v
 > Branch is used to make a copy from the current main branch to start implementing features without messing up with the stable main branch. 
   
 ```properties
-# Listing  
+# Listing Local 
 git branch
+
+# Listing local and remote
+git branch -a
 
 # Creating and checking out a new branch
 git checkout -b <new-branch-name>
