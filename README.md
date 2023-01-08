@@ -272,6 +272,9 @@ git rebase main
 
 # Pull the rebase
 git pull --rebase
+
+# Squaching is melt more commits in only one to merge using rebase. 3 is the number of commits you want to squash moving from HEAD.
+git rebase -i HEAD~3
 ```
   
 
