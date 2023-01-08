@@ -23,6 +23,9 @@ git config --global user.name "me"
 
 # Change default branch name to "main"
 git config --global init.defaultBranch main
+
+# Using Visual Studio Code as your editor
+git config --global core.editor "code --wait"
 ```    
 
 ## SSH
