@@ -297,4 +297,19 @@ git fetch origin main
 git cherry-pick ba48773
 ```
 
+# Alias
+
+> Here is how to create alias for recurrent use commands on git
+
+```properties
+# Create "s" as alias for status command
+git config --global alias.s status
+
+# Now can use like 
+git s
+```
+
+
+
+
 
