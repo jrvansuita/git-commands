@@ -276,6 +276,25 @@ git pull --rebase
 # Squaching is melt more commits in only one to merge using rebase. 3 is the number of commits you want to squash moving from HEAD.
 git rebase -i HEAD~3
 ```
+
+## Fetch
+
+> Update local from remote
+
+```properties
+# All branches
+git fetch --all
+
+# Only main branch
+git fetch origin main
+```
   
+## Cherry Pick
+
+> Picking and merge a specific commit from another branch to your current branch
+
+```properties
+git cherry-pick ba48773
+```
 
 
