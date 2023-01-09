@@ -307,6 +307,12 @@ git config --global alias.s status
 
 # Now can use like 
 git s
+
+# Create "l" for simplify logging
+git config --global alias.l 'log --oneline'
+
+# Now can use like 
+git l
 ```
 
 
