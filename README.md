@@ -30,6 +30,9 @@ git config --global core.editor "code --wait"
 
 ## SSH
 ```properties
+# View your ssh key
+cat ~/.ssh/id_rsa.pub
+
 # Generate key
 ssh-keygen
 
