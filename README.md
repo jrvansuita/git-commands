@@ -219,7 +219,7 @@ git push origin --tags
 git tag -D v2
   
 # Deleting a remote tag
-push --delete origin v2
+git push --delete origin v2
 ```    
   
 ## Stash
